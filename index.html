@@ -8,7 +8,8 @@
         <meta name= "description" content= "First full website">
         <meta name= "author" content="Steve Rivera">
         <meta name= "viewport" content= "width=device-width, initial-scale=1.0" />
-
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
 
@@ -47,7 +48,7 @@
                 I know I have a long way before I can consider myself a successful software developer. However, here are a few things I already know how to do...
             </p>
             <p> <ol class="checklist">
-            <li><form>
+            <li>
                 I can do forms <input type="email" name="email" placeholder="email">
             </li>
             <li> I can also do buttons <input type="submit"> </li>
@@ -58,22 +59,11 @@
             <li> I can do regular checkbox buttons too <input type="checkbox" name="checkbox">see?</input>
                                             <input type="checkbox" checked name="checkbox">I can do this all day</input> </li>
             </ol>
-        </form>
-            <!-- this is where I will add more things the more I learn.-->
             </p>
-            <!--<div class="tooltip">
-                Hover over this text.
-                <span class="tooltip--text">Learning how to tooltip</span>
-            </div>
-        </div>-->
-        
         <article class="javascript">
             <p id="text"> Hello there </p>
             <button id="obi-wan"> General Grievous</button>
-            <script type="text/javascript">
-            document.getElementById("obi-wan").onclick = function(){
-                document.getElementById("text").innerHTML="General Kenobi"}
-            </script>
+           
         </article>
         <hr />
         <div class="conclusion">
@@ -83,4 +73,15 @@
             </p>
         </div>
     </section> 
+    <section class="newStuff">
+        <div id="dragBox">Drag me around</div>
+    </section>
+
+     <script type="text/javascript">
+            document.getElementById("obi-wan").onclick = function(){
+                document.getElementById("text").innerHTML="General Kenobi"};
+        $( function() {
+            $( "#dragBox" ).draggable();
+             } );
+            </script>
     </body>

@@ -73,15 +73,15 @@
             </p>
         </div>
     </section> 
-    <section class="newStuff">
-        <div id="dragBox">Drag me around</div>
-    </section>
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
 
      <script type="text/javascript">
             document.getElementById("obi-wan").onclick = function(){
                 document.getElementById("text").innerHTML="General Kenobi"};
         $( function() {
-            $( "#dragBox" ).draggable();
+            $( "#draggable" ).draggable();
              } );
             </script>
     </body>
